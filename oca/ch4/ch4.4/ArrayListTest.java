@@ -59,5 +59,9 @@ public class ArrayListTest {
     for(String a : myList)
       System.out.println(a);
 
+    System.out.println("###############");
+    myList.clear();
+    for(String b : myList)
+      System.out.println(b);
   }
 }
