@@ -41,5 +41,6 @@ public class IteratorTest {
     for(String s : list) {
       System.out.println(s);
     }
+
   }
 }
