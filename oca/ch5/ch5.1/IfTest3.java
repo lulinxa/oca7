@@ -4,5 +4,9 @@ public class IfTest3 {
     }
     else
       System.out.println(false);
+
+    if(true){}
+    else
+      System.out.println("false");
   }
 }

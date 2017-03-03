@@ -35,7 +35,7 @@ public class StringBuilderTest {
 
      sb1 = new StringBuilder("* "); 
      char name[] = {'J', 'a', 'v', 'K', 'a', '7'};
-     sb1.append(name, 1, 5); // begining index, numberOfChars -> uses System.arraycopy -> throws ArrayIndexOutOfBOunds
+     sb1.append(name, 3, 0); // begining index, numberOfChars -> uses System.arraycopy -> throws ArrayIndexOutOfBOunds
      System.out.println(sb1);
 
      
@@ -107,5 +107,12 @@ public class StringBuilderTest {
      /* subSequence() */
      System.out.println(sb4.subSequence(2, 4));
      System.out.println(sb4);
+
+
+     System.out.println();
+     sb1 = new StringBuilder("TEST");
+     Object b = null;
+     sb1.insert(2, b);
+     System.out.println(sb1);
    }
  }

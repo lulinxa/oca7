@@ -2,6 +2,7 @@ class SwitchWOBreak {
   public static void main(String args[]) {
     int score = 50;
     int result = 10;
+    
     switch (score) {
       case 100: result = 0;
       case 50: result = 1;
@@ -10,6 +11,8 @@ class SwitchWOBreak {
       //default: result = 3;
     }
     System.out.println(result);
+
+    score = 49;
     switch (score) {
       case 100: result = 0;
                 break;
