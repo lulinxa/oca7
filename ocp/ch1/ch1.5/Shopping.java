@@ -9,7 +9,7 @@ class Shopping {
 
 		// printable.description(); -> can't compile
 		// need for explicit cast
-		((Book)printable).description();
+		((Book) printable).description();
 
 
 	}
