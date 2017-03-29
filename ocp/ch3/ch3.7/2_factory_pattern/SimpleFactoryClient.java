@@ -24,7 +24,7 @@ class AppFactory {
 	}
 }
 
-class Client {
+class SimpleFactoryClient {
 	public static void main(String args[]){
 		App app = AppFactory.getAppInstance(".docx");
 		app.open("Hello.doc");
