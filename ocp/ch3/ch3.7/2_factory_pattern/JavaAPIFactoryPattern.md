@@ -1,6 +1,6 @@
 ### Factory pattern from Java API
 | *Class* | *Method* | _Description_ |
-|---------|:--------:|--------------:|
+|---------|:--------|:--------------|
 |java.util.Calendar			|getInstance()		|Gets a calendar using the default time zone and locale.	|
 |java.util.Arrays			|asList()			|Returns a fixed-size list backed by te specified array.	|
 |java.util.ResourceBundle	|getBundle()		|Overloaded version of this method return a resource bundle using the specified base name, target locale, class loader and control.	|
