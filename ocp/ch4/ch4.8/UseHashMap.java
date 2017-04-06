@@ -1,11 +1,25 @@
 import java.util.*;
 
 enum IceCream { CHOCOLATE, STRAWBERRY, WALNUT }
+enum Color { RED, WHITE, BLUE }
 
 class Emp {
 	String name;
 	Emp(String name) {
 		this.name = name;
+	}
+	public int hashCode() {
+		return name.hashCode();
+	}
+	public boolean equals(Object o) {
+		if(o instanceof Emp) {
+			return ((Emp)o).name.equals(name);
+		}
+		else
+			return false;
+	}
+	public String toString() {
+		return "Emp:" + name;
 	}
 }
 
@@ -52,6 +66,48 @@ class UseHashMap {
 		empMgrEmp.put(new Emp("Paul"), new Emp("Selvan"));
 		System.out.println(empMgrEmp.get(new Emp("Paul"))); // prints null if hashCode and equlas not in Emp
 
+		//comment hashCode() of Emp
+		System.out.println(empMgrEmp.containsKey(new Emp("Shreya")));
+		System.out.println(empMgrEmp.containsValue(new Emp("Selvan")));
+
+		/*
+		 * adding pair such that key already exists replaces value with new one
+		 * one null key pre map
+		 * remove(key) removing one pair
+		 * clear() removing all pairs in map
+		 */
+		empMgrEmp.remove(new Emp("Shreya"));
+		System.out.println(empMgrEmp);
+
+		// List as key in Map
+		Map<List, String> flavorMapListAsKey = new HashMap<>();
 		
+		List<IceCream> ic = new ArrayList<>();
+		ic.add(IceCream.WALNUT);
+		ic.add(IceCream.CHOCOLATE);
+		flavorMapListAsKey.put(ic, "Shreya");
+		
+		List<IceCream> ic2 = new ArrayList<>();
+		ic2.add(IceCream.WALNUT);
+		ic2.add(IceCream.CHOCOLATE);
+
+		System.out.println(flavorMapListAsKey.remove(ic2));
+		
+		System.out.println();
+
+		Map<Color, String> colorMap = new HashMap<>();
+		colorMap.put(Color.RED, "Passion");
+		colorMap.put(Color.WHITE, "Stability");
+		colorMap.put(Color.BLUE, "Sea");
+
+		Collection<String> meaning = colorMap.values();
+		Set<Color> colors = colorMap.keySet();
+		Set<Map.Entry<Color, String>> colorsMeaning = colorMap.entrySet();
+
+		System.out.println(meaning);
+		System.out.println(colors);
+		System.out.println(colorsMeaning);
+		for(Map.Entry pair : colorsMeaning)
+			System.out.println(pair.getKey() + "=" + pair.getValue());
 	}
 }
