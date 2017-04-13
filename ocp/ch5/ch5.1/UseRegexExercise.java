@@ -5,10 +5,10 @@ class UseRegexExercise {
 		System.out.println(s);
 		System.out.println("++++++++++++");
 		while(m.find())
-		System.out.println(m.group() + " starts at " + 
-			m.start() + ", ends at " +
-			m.end()
-		);
+			System.out.println(m.group() + " starts at " + 
+				m.start() + ", ends at " +
+				m.end()
+			);
 		System.out.println();
 	}
 

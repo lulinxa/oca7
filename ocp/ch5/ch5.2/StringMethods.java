@@ -44,7 +44,7 @@ class StringMethods {
 		 * split(String regex, int limit);
 		 * If limit is nonpositive, then the regex pattern will be applied as many times as
 		 * possible and the array tokens can have any length. If limit is passed 0, the regex
-		 * pattern will be applied as many times as possible, but tokens won’t include trailing
+		 * pattern will be applied as many times as possible, but tokens won't include trailing
 		 * empty strings. 
 		 */
 		String test[] = new String[10];
