@@ -69,10 +69,10 @@ class StringMethods {
 		);
 		System.out.println(newString);
 
-		str = "cat kcup copp";
-		newString = str.replaceAll("\\Bc.p\\B", "()");
+		str = "cat kcupk copp";
+		newString = str.replaceAll("\\bc.p\\B", "()");
 		System.out.println(newString);
-		newString = str.replaceAll("c.p\\b", "()");
+		newString = str.replaceAll("\\Bc.p\\b", "()");
 		System.out.println(newString);
 
 		String str1 = "Start startup, time to start";
