@@ -27,8 +27,9 @@ class SimpleStiwch {
       default: System.out.println("Invalid day?");
     }
     
-    String day1 = new String("THU");
+    String day1 = new String("THUU");
     switch (day1) {
+      default: System.out.println("Invalid day?");
       case "MON":
       case "TUE":
       case "WED":
@@ -39,7 +40,6 @@ class SimpleStiwch {
       case "SAT":
       case "SUN": System.out.println("Weekend!");
                   break;
-      default: System.out.println("Invalid day?");
     }
 
   }
