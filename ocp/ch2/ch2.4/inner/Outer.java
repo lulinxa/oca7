@@ -1,6 +1,10 @@
 class Outer {
 	Inner objectInner = new Inner();
-	class Inner {}
+	class Inner {
+		Inner() {
+			System.out.println("Inner created - constructor");
+		}
+	}
 	void aMethod() {
 		Inner objectInner = new Inner();
 	}
