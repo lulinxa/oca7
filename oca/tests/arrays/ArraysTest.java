@@ -25,5 +25,21 @@ public class ArraysTest {
       for(int b[] : a)
         for(int i : b)
           System.out.println(i);
+
+
+	System.out.println();
+	
+	int i = 4;
+	int ia[][][] = new int[i+=1][i=3][i];
+	System.out.println(ia.length + ":" + ia[0].length + ":" + ia[0][0].length);
+	
+	double daaa[][][] = new double[3][][];
+	double d = 100.0;
+	double[][] daa = new double[1][1];
+
+	daaa[0] = daa;
+	daa = daaa[0];
+	System.out.println(daaa[0]);
+	System.out.println(daa);
   }
 }
